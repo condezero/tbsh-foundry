@@ -1,0 +1,55 @@
+<div class="tbsh-grid tbsh-grid-4-col">
+
+  <field class="tbsh-field">
+    <label for="data.damageDice.armed" class="tbsh-label">{{localize "TBSH.fields.labels.armedDamage"}}</label>
+    <select name="data.damageDice.armed" class="tbsh-select">
+      {{#select data.damageDice.armed}}
+      {{#each config.damageDieTypes as |label value|}}
+      <option value="{{value}}">{{localize label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </field>
+
+  <field class="tbsh-field">
+    <label for="data.damageDice.unarmed" class="tbsh-label">{{localize "TBSH.fields.labels.unarmedDamage"}}</label>
+    <select name="data.damageDice.unarmed" class="tbsh-select">
+      {{#select data.damageDice.unarmed}}
+      {{#each config.damageDieTypes as |label value|}}
+      <option value="{{value}}">{{localize label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </field>
+  <field class="tbsh-field">
+    <label for="data.doomDice.maximum" class="tbsh-label">{{localize
+      "TBSH.fields.labels.doomMaximum"}}</label>
+    <select name="data.doomDice.maximum" class="tbsh-select doom-select">
+
+      {{#select data.doomDice.maximum}}
+
+      {{#each config.usageDieTypes as |label value|}}
+      <option value="{{value}}">{{localize label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+
+  </field>
+  <field class="tbsh-field">
+    <label for="data.doomDice.current" class="tbsh-label">{{localize
+      "TBSH.fields.labels.actual"}}</label>
+    <label for="" class="tbsh-label">
+      {{#if (eq data.doomDice.current "none")}}
+      {{localize "TBSH.fields.labels.notApplicable"}}
+      {{else}}
+      {{#if (eq data.doomDice.current "exhausted")}}
+      {{localize "TBSH.fields.labels.exhausted"}}
+      {{else}}
+      1{{data.doomDice.current}}
+      {{/if}}
+      {{/if}}
+
+
+    </label>
+  </field>
+</div>

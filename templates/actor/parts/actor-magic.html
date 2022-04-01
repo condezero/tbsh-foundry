@@ -1,0 +1,21 @@
+<div class="tbsh-basics-tab tbsh-tab-content">
+  <div class="tbsh-weapons-container tbsh-clear-both">
+    <h2>
+      <div class="tbsh-weapon-section-header">
+        <div>
+          {{localize "TBSH.fields.headers.magic"}}
+        </div>
+      </div>
+    </h2>
+    <div class="tbsh-weapons-list-container">
+      <div class="tbsh-weapon-headers">
+        <div>{{localize "TBSH.fields.labels.name"}}</div>
+        <div>{{localize "TBSH.fields.labels.type"}}</div>
+        <div></div>
+      </div>
+      {{#each magic as |mag id|}}
+      {{> "systems/tbsh/templates/partials/spell-entry.html" mag}}
+      {{/each}}
+    </div>
+  </div>
+</div>

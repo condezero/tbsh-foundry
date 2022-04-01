@@ -1,0 +1,18 @@
+<p>
+    {{localize "TBSH.messages.blurbs.usageDie"}}: {{item}}
+</p>
+
+{{> "systems/tbsh/templates/messages/roll.hbs" roll}}
+{{log message}}
+{{log roll}}
+{{#downgraded}}
+<p class="tbsh-usage-die-fail">
+    {{localize "TBSH.messages.blurbs.usageDieDowngrade"}} 1{{die}}
+</p>
+{{/downgraded}}
+
+{{#exhausted}}
+<p class="tbsh-usage-die-fail">
+    {{localize "TBSH.messages.blurbs.usageDieExhausted"}} {{item}}
+</p>
+{{/exhausted}}

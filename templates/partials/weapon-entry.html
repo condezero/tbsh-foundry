@@ -1,0 +1,21 @@
+<div class="tbsh-weapon-entry">
+    <div>{{name}}</div>
+    <div>
+        {{attackKind data.kind}}
+    </div>
+    <div>
+        {{longAttributeName data.attribute}}
+    </div>
+    <div>
+        {{effectName data.effect }}
+    </div>
+
+    <div>
+        <a class="tbsh-action-link" title="{{localize "TBSH.fields.titles.rollAttack"}}">
+            <i class="fas fa-dice-d20 tbsh-roll-attack-icon" data-attribute="{{data.attribute}}" data-kind="{{data.kind}}" data-adv="{{data.twoHanded}}" data-id="{{_id}}" data-name="{{name}}" data-size="{{data.size}}"></i>
+        </a>
+        <a class="tbsh-action-link"  title="{{localize "TBSH.fields.titles.deleteWeapon"}}">
+            <i class="far fa-trash-alt tbsh-delete-item-icon" data-id="{{_id}}"></i>
+        </a>
+    </div>
+</div>

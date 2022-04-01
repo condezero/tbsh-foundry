@@ -1,0 +1,98 @@
+<div class="tbsh-basics-tab tbsh-tab-content tbsh-hidden">
+    <div class="tbsh-weapons-container tbsh-collapsible-container tbsh-clear-both">
+        <h2>
+            
+            {{localize "TBSH.fields.headers.weapons"}}
+        </h2>
+        <div class="tbsh-weapons-list-container tbsh-collapsible">
+            <div class="tbsh-weapon-headers">
+                <div>{{localize "TBSH.fields.labels.name"}}</div>
+                <div>{{localize "TBSH.fields.labels.type"}}</div>
+                <div>{{localize "TBSH.fields.labels.attribute"}}</div>
+                <div>{{localize "TBSH.fields.labels.size"}}</div>
+                <div></div>
+            </div>
+        {{#each weapons as |weapon id|}}
+            {{> "systems/tbsh/templates/partials/weapon-entry.html" weapon}}
+        {{/each}}
+        </div>
+    </div>
+
+    <br>
+
+    <div class="tbsh-armour-container tbsh-collapsible-container">
+        <h2>
+            <div class="tbsh-armour-section-header">
+                <div>
+                    
+                    {{localize "TBSH.fields.headers.armour"}}
+                </div>
+                <div>
+                    <a class="tbsh-action-link" href="#" title="{{localize "TBSH.fields.titles.repairAllArmourDie"}}">
+                      <i class="fas fa-tools tbsh-repair-all-armour-dice-icon" data-id="{{actor.id}}"></i>
+                    </a>
+                </div>
+            </div>
+        </h2>
+
+        <div class="tbsh-armour-list-container tbsh-collapsible">
+            <div class="tbsh-armour-headers">
+                <div>{{localize "TBSH.fields.labels.name"}}</div>
+                <div><center>{{localize "TBSH.fields.labels.totalDice"}}</center></div>
+                <div><center>{{localize "TBSH.fields.labels.brokenDice"}}</center></div>
+                <div></div>
+            </div>
+
+        {{#each armour as |item id|}}
+    {{log item}}
+            {{> "systems/tbsh/templates/partials/armour-entry.html" item}}
+        {{/each}}
+        </div>
+    </div>
+
+    <br>
+
+    <div class="tbsh-equipment-container tbsh-collapsible-container">
+        <h2>
+            <div class="tbsh-equipment-section-header">
+                <div>
+                    
+                    {{localize "TBSH.fields.headers.equipment"}}
+                </div>
+                <div>
+                  <a class="tbsh-action-link" href="#" title="{{localize "TBSH.fields.titles.resetAllUsageDice"}}">
+                    <i class="fas fa-undo-alt tbsh-reset-all-usage-dice-icon" data-id="{{actor.id}}"></i>
+                  </a>
+                </div>
+            </div>
+        </h2>
+
+        <div class="tbsh-equipment-list-container tbsh-collapsible">
+            <div class="tbsh-equipment-headers">
+                <div>{{localize "TBSH.fields.labels.name"}}</div>
+                <div><center>{{localize "TBSH.fields.labels.quantity"}}</center></div>
+                <div><center>{{localize "TBSH.fields.labels.usageDie"}}</center></div>
+                <div></div>
+            </div>
+        {{#each equipment as |item id|}}
+            {{> "systems/tbsh/templates/partials/equipment-entry.html" item}}
+        {{/each}}
+        </div>
+    </div>
+
+    <br>
+
+    <div class="tbsh-abilities-container tbsh-collapsible-container">
+        <h2>
+            
+            {{localize "TBSH.fields.headers.abilities"}}
+        </h2>
+        <div class="tbsh-abilities-list-container tbsh-collapsible">
+        {{#each abilities as |ability id|}}
+            {{> "systems/tbsh/templates/partials/ability-entry.hbs" ability}}
+        {{/each}}
+        </div>
+    </div>
+
+    <br>
+</div>

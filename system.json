@@ -1,0 +1,33 @@
+{
+  "name": "tbsh",
+  "title": "The Black Sword Hack",
+  "description": "The The Black Sword Hack system for FoundryVTT!",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "9",
+  "author": "Carlos Lisandra",
+  "esmodules": ["module/tbsh.mjs"],
+  "styles": ["css/tbsh.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },{
+      "lang": "es",
+      "name": "Spanish",
+      "path": "lang/es.json"
+    }
+
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}

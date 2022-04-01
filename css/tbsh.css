@@ -1,0 +1,370 @@
+.tbsh-action-link {
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.tbsh-alert-icon {
+	color: #a00;
+}
+
+.tbsh-armour-entry {
+	display: grid;
+	grid-template-columns: 50% 15% 15% 20%;
+	margin: 3px 0;
+}
+
+.tbsh-armour-headers {
+	display: grid;
+	font-weight: bold;
+	grid-template-columns: 50% 15% 15% 20%;
+	margin: 3px 0;
+}
+
+.tbsh-armour-section-header {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	margin: 3px 0;
+}
+.tbsh-weapon-section-header {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	margin: 3px 0;
+}
+
+.tbsh-attribute-cell {
+	text-align: center;
+}
+
+.tbsh-attribute-container {
+	margin: 15px 0;
+}
+
+.tbsh-attribute-header {
+	font-size: 1.15;
+	font-weight: bold;
+}
+
+.tbsh-attribute-header-container {
+	background-color: #333;
+	color: #fff;
+	margin-bottom: 3px;
+	padding: 5px 0;
+}
+
+.tbsh-attribute-input {
+	text-align: center;
+}
+
+.tbsh-attribute-table {
+	font-size: 1.2em;
+}
+
+.tbsh-clear-both {
+	clear: both;
+}
+
+.bh2-creature-ability-action-column {
+	font-size: 1.2em;
+	float: right;
+	margin-right: 15px;
+}
+
+.bh2-creature-ability-detail-column {
+	font-size: 1.1em;
+	width: 90%;
+}
+
+.tbsh-creature-ability-entry {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.bh2-creature-ability-name {
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.bh2-create-ability-notes-container {
+	margin-left: 15px;
+}
+
+.tbsh-creature-attack-container {
+	margin: 5px 5px 10px 5px;
+}
+
+.tbsh-creature-attack-header {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.tbsh-creature-attack-targets {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.bh2-creature-header {
+	display: grid;
+	grid-template-columns: 96px auto;
+}
+
+.tbsh-cs-attributes-section {
+	border: solid 1px #777;
+	padding: 5px;
+}
+
+.tbsh-cs-container {
+	display: grid;
+	font-size: 1.1em;
+	grid-template-columns: 15% 85%;
+	padding: 5px;
+}
+
+.tbsh-cs-main-body {
+	padding: 5px;
+}
+
+.tbsh-damage-button-container {
+	margin-top: 5px;
+}
+
+.tbsh-damage-details {
+	color: #a00;
+	font-size: 120%;
+	text-align: center;
+}
+
+.tbsh-editor-field {
+	display: block;
+	min-height: 200px;
+	width: 95%;
+}
+
+.tbsh-equipment-entry {
+	display: grid;
+	grid-template-columns: 40% 10% 15% 35%;
+	margin: 3px 0;
+}
+
+.tbsh-equipment-headers {
+	display: grid;
+	font-weight: bold;
+	grid-template-columns: 40% 10% 15% 35%;
+	margin: 3px 0;
+}
+
+.tbsh-equipment-section-header {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	margin: 3px 0;
+}
+
+.tbsh-field {
+	display: block;
+	margin-bottom: 10px;
+	width: 95%;
+}
+
+.tbsh-float-left {
+	float: left;
+}
+
+.tbsh-float-right {
+	float: right;
+}
+
+.tbsh-grid {
+	display: grid;
+	width: 95%;
+}
+
+.tbsh-grid-2-col {
+	grid-template-columns: 50% 50%;
+}
+
+.tbsh-grid-3-col {
+	grid-template-columns: 33% 33% 33%;
+}
+
+.tbsh-grid-4-col {
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.tbsh-grid-5-col {
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.tbsh-hidden {
+	display: none;
+}
+
+.tbsh-label {
+	display: block;
+	font-weight: bold;
+	margin: 3px 0;
+}
+
+.tbsh-input {
+	margin: 3px 0 !important;
+}
+
+.tbsh-magic-level-title {
+	font-weight: bold;
+}
+
+.tbsh-magic-name {
+	color: #070;
+	font-weight: bold;
+}
+
+.tbsh-magic-name-unprepared {
+	color: #aaa;
+	font-weight: bold;
+}
+
+.tbsh-prayer-entry {
+	margin: 0 10px 20px 5px;
+}
+
+.tbsh-roll-column {
+	float: left;
+	padding: 5px 0;
+	margin: 0;
+	width: 50%;
+}
+
+.tbsh-roll-column-content {
+	font-size: 120%;
+	text-align: center;
+}
+
+.tbsh-roll-column-title {
+	font-size: 120%;
+	font-weight: bold;
+	margin: 3px 0;
+	text-align: center;
+}
+
+.tbsh-roll-failure {
+	background-color: #a00;
+	clear: both;
+	color: #fff;
+	margin-top: 5px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.tbsh-roll-success {
+	background-color: #0a0;
+	clear: both;
+	color: #fff;
+	margin-top: 5px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.tbsh-roll-title {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.tbsh-see-through {
+	opacity: 0;
+}
+
+.tbsh-select {
+	width: 100%;
+}
+
+.tbsh-selected-tab .tbsh-tab-label {
+    color: #000;
+    font-weight: bold;
+}
+
+.tbsh-spell-entry {
+	display: grid;
+	grid-template-columns: 40% 15% 15% 15% 15%;
+	margin: 3px 0;
+}
+
+.tbsh-spell-miscast {
+	color: #a00;
+	font-size: 110%;
+	text-align: center;
+}
+
+.tbsh-spell-unprepared {
+	color: #a00;
+	font-size: 110%;
+	text-align: center;
+}
+
+.tbsh-tab {
+	border-left: solid 1px #aaa;
+	border-right: solid 1px #aaa;
+	border-top: solid 1px #aaa;
+	cursor: pointer;
+	float: left;
+	height: 35px;
+	padding: 5px 15px;
+	margin-right: 3px;
+}
+
+.tbsh-tabs-container {
+	border-bottom: solid 1px #aaa;
+	margin-bottom: 10px;
+	min-height: 35px;
+	padding-left: 5px;
+}
+
+.tbsh-tab-label {
+	color: #aaa;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.tbsh-text-input {
+}
+
+.tbsh-toggle-collapse-widget {
+	display: inline;
+}
+
+.tbsh-usage-die-fail {
+	color: #a00;
+	font-size: 110%;
+	text-align: center;	
+}
+
+.tbsh-weapon-entry {
+	display: grid;
+	grid-template-columns: 40% 15% 15% 15% 15%;
+	margin: 3px 0;
+}
+
+.tbsh-weapon-headers {
+	display: grid;
+	font-weight: bold;
+	grid-template-columns: 40% 15% 15% 15% 15%;
+	margin: 3px 0;
+}
+
+.tbsh-weapons-list-container {
+	transition: opacity 1s;
+}
+
+.editor {
+	height: 200px;
+}
+
+.editor-content {
+	height: 200px;
+}
+
+.fa-dice-d20 {
+	color: var(--color-text-hyperlink);
+}

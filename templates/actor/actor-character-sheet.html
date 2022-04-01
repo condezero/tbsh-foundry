@@ -1,0 +1,75 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <div class="tbsh-cs-container">
+    {{> "systems/tbsh/templates/actor/parts/actor-attributes-details.html"}}
+
+    <section class="tbsh-cs-main-body">
+
+
+      <field class="tbsh-field">
+        <label class="tbsh-label" for="actor.name">{{localize "TBSH.fields.labels.name"}}</label>
+        <input type="text" name="name" value="{{actor.name}}" />
+      </field>
+
+      <div class="tbsh-grid tbsh-grid-3-col">
+
+
+        <field class="tbsh-field">
+          <label class="tbsh-label" for="data.level">{{localize "TBSH.fields.labels.level"}}</label>
+          <input style="text-align: center;" type="number" name="data.level" value="{{data.level}}" />
+        </field>
+
+        <field class="tbsh-field">
+          <label class="tbsh-label" for="data.hitPoints.max">{{localize "TBSH.fields.labels.hitPointsMax"}}</label>
+          <input style="text-align: center;" type="number" name="data.hitPoints.max" value="{{data.hitPoints.max}}" />
+        </field>
+
+        <field class="tbsh-field">
+          <label class="tbsh-label" for="data.hitPoints.value">{{localize "TBSH.fields.labels.hitPointsValue"}}</label>
+          <input style="text-align: center;" type="number" name="data.hitPoints.value"
+            value="{{data.hitPoints.value}}" />
+        </field>
+      </div>
+      {{> "systems/tbsh/templates/actor/parts/actor-usage-die-details.html"}}
+
+
+      <nav class="sheet-tabs tabs" data-group="primary">
+        {{!-- Default tab is specified in actor-sheet.mjs --}}
+        <a class="item" data-tab="background">{{localize "TBSH.tabs.labels.background"}}</a>
+        <a class="item" data-tab="fight">Combate</a>
+        <a class="item" data-tab="spells">{{localize "TBSH.tabs.labels.magic"}}</a>
+        <a class="item" data-tab="items">{{localize "TBSH.tabs.labels.items"}}</a>
+        
+
+      </nav>
+      <section class="sheet-body">
+        {{!-- Biography Tab --}}
+        <div class="tab background" data-group="primary" data-tab="background">
+          {{editor content=data.biography target="data.biography" rollData=rollData button=true owner=owner
+          editable=editable}}
+
+
+        </div>
+        {{!-- Owned Items Tab --}}
+        <div class="tab fight" data-group="primary" data-tab="fight">
+          {{> "systems/tbsh/templates/actor/parts/actor-fight.html"}}
+        </div>
+
+        
+
+        {{!-- Owned Items Tab --}}
+        <div class="tab spells" data-group="primary" data-tab="spells">
+          {{> "systems/tbsh/templates/actor/parts/actor-magic.html"}}
+        </div>
+        <div class="tab items" data-group="primary" data-tab="items">
+          {{> "systems/tbsh/templates/actor/parts/actor-items.html"}}
+        </div>
+      </section>
+  </div>
+
+
+  </section>
+
+
+  </div>
+
+</form>

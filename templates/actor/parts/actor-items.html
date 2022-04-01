@@ -1,0 +1,34 @@
+<div class="tbsh-basics-tab tbsh-tab-content">
+    <div class="tbsh-equipment-container">
+        <h2>
+            <div class="tbsh-equipment-section-header">
+                <div>
+                    
+                    {{localize "TBSH.fields.headers.equipment"}}
+                </div>
+                <div>
+                  
+                </div>
+            </div>
+        </h2>
+
+        <div class="tbsh-equipment-list-container">
+            <div class="tbsh-equipment-headers">
+                <div>{{localize "TBSH.fields.labels.name"}}</div>
+                <div>
+                    <center>{{localize "TBSH.fields.labels.quantity"}}</center>
+                </div>
+                <div>
+                    <center>{{localize "TBSH.fields.labels.usageDie"}}</center>
+                </div>
+                <div></div>
+            </div>
+            {{#each equipment as |item id|}}
+            {{> "systems/tbsh/templates/partials/equipment-entry.html" item}}
+            {{/each}}
+        </div>
+    </div>
+
+    <br>
+
+</div>

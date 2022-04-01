@@ -1,0 +1,18 @@
+<section class="tbsh-creature-attack-container">
+    <div class="tbsh-creature-attack-header">
+        <span class="tbsh-creature-attack-name">{{name}}</span>
+        -
+        <span class="tbsh-creature-attack-attribute">{{shortAttributeName data.attribute}}</span>
+        <span class="tbsh-creature-attack-targets">({{data.targetQuantity}} {{rangeName data.range}})</span>
+        <span class="tbsh-creature-attack-damage">{{data.damage}} Dmg</span>
+        <span>
+            <a class="tbsh-action-link" href="#" title="{{localize "TBSH.fields.titles.deleteAttack"}}">
+                <i class="far fa-trash-alt tbsh-delete-item-icon" data-id="{{_id}}"></i>
+            </a>
+        </span>
+    </div>
+
+    <div class="tbsh-creature-attack-notes">
+        {{{data.notes}}}
+    </div>
+</section>

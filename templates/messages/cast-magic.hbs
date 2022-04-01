@@ -1,0 +1,22 @@
+<p>
+{{#ritual}}
+    {{localize "TBSH.messages.blurbs.castsRitual"}} - {{spellName}}
+{{/ritual}}
+{{^ritual}}
+    {{localize "TBSH.messages.blurbs.casts"}} - {{spellName}}
+{{/ritual}}
+</p>
+
+{{> "systems/tbsh/templates/messages/roll.hbs" roll}}
+
+{{#lost}}
+<p class="tbsh-spell-unprepared">
+    {{localize "TBSH.messages.blurbs.spellLost"}}
+</p>
+{{/lost}}
+
+{{#miscast}}
+<p class="tbsh-spell-miscast">
+    {{localize "TBSH.messages.blurbs.spellMiscast"}}
+</p>
+{{/miscast}}

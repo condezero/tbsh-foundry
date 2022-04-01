@@ -1,0 +1,28 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+    </header>
+
+    <div>
+        <div class="tbsh-grid tbsh-grid-2-col">
+            <field class="tbsh-field">
+                <label for="data.kind" class="tbsh-label">{{localize "TBSH.fields.labels.weaponKind"}}</label>
+                <select name="data.kind" class="tbsh-input tbsh-select">
+                    {{#select data.kind}}
+                    {{#each config.magicKinds as |label value|}}
+                    <option value="{{value}}">{{localize label}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </field>
+
+        </div>
+        
+    </div>
+    <field class="tbsh-editor-field">
+        <label for="data.description" class="tbsh-label">{{localize "TBSH.fields.labels.description"}}</label>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </field>
+    </div>
+</form>

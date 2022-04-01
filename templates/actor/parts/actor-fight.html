@@ -1,0 +1,66 @@
+<div class="tbsh-basics-tab tbsh-tab-content">
+    <div class="tbsh-weapons-container tbsh-clear-both">
+        <h2>
+            <div class="tbsh-weapon-section-header">
+                <div>
+
+                    {{localize "TBSH.fields.headers.weapons"}}
+                </div>
+
+                <div>
+                   
+                </div>
+            </div>
+        </h2>
+        <div class="tbsh-weapons-list-container tbsh-collapsible">
+            <div class="tbsh-weapon-headers">
+                <div>{{localize "TBSH.fields.labels.name"}}</div>
+                <div>{{localize "TBSH.fields.labels.type"}}</div>
+                <div>{{localize "TBSH.fields.labels.attribute"}}</div>
+                <div>{{localize "TBSH.fields.labels.effect"}}</div>
+                <div></div>
+            </div>
+            {{#each weapons as |weapon id|}}
+            {{> "systems/tbsh/templates/partials/weapon-entry.html" weapon}}
+            {{/each}}
+        </div>
+    </div>
+
+    <br>
+
+    <div class="tbsh-armour-container tbsh-collapsible-container">
+        <h2>
+            <div class="tbsh-armour-section-header">
+                <div>
+                    
+                    {{localize "TBSH.fields.headers.armour"}}
+                </div>
+                <div>
+                  
+                </div>
+            </div>
+        </h2>
+
+        <div class="tbsh-armour-list-container tbsh-collapsible">
+            <div class="tbsh-armour-headers">
+                <div>{{localize "TBSH.fields.labels.name"}}</div>
+                <div>
+                    <center>{{localize "TBSH.fields.labels.armorValue"}}</center>
+                </div>
+                <div>
+                    
+                </div>
+                <div></div>
+            </div>
+
+            {{#each armour as |item id|}}
+            {{log item}}
+            {{> "systems/tbsh/templates/partials/armour-entry.html" item}}
+            {{/each}}
+        </div>
+    </div>
+
+    <br>
+
+
+</div>

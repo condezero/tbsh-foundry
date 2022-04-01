@@ -1,0 +1,24 @@
+<div class="tbsh-roll-title">
+    <strong>{{labels.title}}</strong>
+</div>
+
+<div class="tbsh-roll-details tbsh-hidden">
+    <div class="tbsh-roll-column">
+        <div class="tbsh-roll-column-title">{{localize "TBSH.messages.titles.formula"}}</div>
+        <div class="tbsh-roll-column-content">{{formula}}</div>
+    </div>
+    <div class="tbsh-roll-column">
+        <div class="tbsh-roll-column-title">{{localize "TBSH.messages.titles.roll"}}</div>
+        <div class="tbsh-roll-column-content">{{result}}</div>
+    </div>
+</div>
+
+{{#tested}}
+  {{#success}}
+<div class="tbsh-roll-success">{{labels.result}}</div>
+  {{/success}}
+
+  {{^success}}
+<div class="tbsh-roll-failure">{{labels.result}}</div>
+  {{/success}}
+{{/tested}}

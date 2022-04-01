@@ -1,0 +1,228 @@
+{
+	"TBSH": {
+		"dice": {
+			"one": "1",
+			"d4": "1d4",
+			"d6": "1d6",
+			"d8": "1d8",
+			"d10": "1d10",
+			"d12": "1d12",
+			"d20": "1d20",
+			"special": "Otro"
+		},
+		"fields": {
+			"headers": {
+				"armour": "Armadura",
+				"background": "Descripción",
+				"equipment": "Equipo",
+				"weapons": "Armas",
+				"magic": "Magia"
+			},
+			"labels": {
+				"armedDamage": "Dado de daño (Armado)",
+				"armourValue": "Valor de armadura",
+				"attacks": "Ataques",
+				"attribute": "Atributo",
+				"attributes": {
+					"charisma": {
+						"long": "Carisma",
+						"short": "CAR"
+					},
+					"constitution": {
+						"long": "Constitucion",
+						"short": "CON"
+					},
+					"dexterity": {
+						"long": "Destreza",
+						"short": "DES"
+					},
+					"intelligence": {
+						"long": "Inteligencia",
+						"short": "INT"
+					},
+					"strength": {
+						"long": "Fuerza",
+						"short": "FUE"
+					},
+					"wisdom": {
+						"long": "Sabiduria",
+						"short": "SAB"
+					}
+				},
+				"baseUsageDie": "Dado de uso",
+				"brokenDice": "Broken Dice",
+				"currentUsageDie": "Current Die",
+				"damage": "Daño",
+				"description": "Description",
+				"dice": "Dado",
+				"exhausted": "Exhausted",
+				"hitDice": "Hit Dice",
+				"hitDie": "Hit Die",
+				"hitPoints": "Hit Points",
+				"hitPointsMax": "PV Máximos",
+				"hitPointsValue": "PV Actuales",
+				"key": "Key",
+				"largeWeapon": "Large Weapon?",
+				"level": "Nivel",
+				"magicKind": "Tipo",
+				"doom": "Condena",
+				"armorValue": "Armadura",
+				"name": "Nombre",
+				"none": "None",
+				"notApplicable": "-",
+				"notes": "Notes",
+				"quantity": "Cantidad",
+				"range": "Distancia",
+				"rarity": "Rarity",
+				"size": "Tamaño",
+				"tag": "Tag",
+				"targetQuantity": "Target Quantity",
+				"testAttribute": "Atributo (para atacar)",
+				"totalDice": "Total Dice",
+				"unarmedDamage": "(Desarmado)",
+				"usageDie": "Dado de uso",
+				"weapon": "Arma",
+				"weaponKind": "Tipo",
+				"weaponSize": "Tamaño",
+				"effect": "Efecto",
+				"type": "Tipo",
+				"doomMaximum": "Condena máxima",
+				"actual": "Actual"
+			},
+			"titles": {
+				"breakArmourDie": "Break Die",
+				"castPrayer": "Perform This Prayer",
+				"castPrayerAsRitual": "Perform This Prayer As A Ritual",
+				"castSpell": "Cast This Spell",
+				"castSpellAsRitual": "Cast This Spell As A Ritual",
+				"decreaseQuantity": "Decrease Quantity",
+				"deleteAbility": "Delete Ability",
+				"deleteArmour": "Delete Armour Item",
+				"deleteAttack": "Delete Attack",
+				"deleteEquipment": "Delete Item",
+				"deletePrayer": "Delete Prayer",
+				"deleteSpell": "Delete Spell",
+				"deleteWeapon": "Delete Weapon",
+				"increaseQuantity": "Increase Quantity",
+				"prayerAlreadyCast": "Prayer Has Been Performed At Least Once Already",
+				"preparePrayer": "Prepare This Prayer",
+				"prepareSpell": "Prepare This Spell",
+				"repairAllArmourDie": "Repair All Armour Items",
+				"repairArmourDie": "Repair A Single Die On This Item",
+				"resetAllUsageDice": "Reset All Usage Dice",
+				"resetUsageDie": "Reset Usage Die",
+				"rollAttack": "Roll Attack",
+				"rollAttributeTest": "Roll Attribute Test",
+				"rollUsageDie": "Roll Usage Die",
+				"spellAlreadyCast": "Spell Has Been Cast At Least Once Already",
+				"unprepared": "Unprepared",
+				"unpreparePrayer": "Unprepare This Prayer",
+				"unprepareSpell": "Unprepare This Spell"
+			}
+		},
+		"initiative": {
+			"roll": "Rolling DEX test for initiative."
+		},
+		"magic": {
+			"kinds": {
+				"spell": "Conjuro",
+				"demon": "Demonio",
+				"spirit": "Espiritu"
+			}
+		},
+		"messages": {
+			"attributeTestFailed": "Test was a failure.",
+			"attributeTestSuccess": "Test was successful.",
+			"attacking": "%NAME% attacks with a %WEAPON%",
+			"attackMiss": "...but misses.",
+			"blurbs": {
+				"attacksWith": "Ataque con",
+				"casts": "Lanza el conjuro",
+				"castsRitual": "Attempts To Cast As Ritual",
+				"damageInflicted": "Daño causado",
+				"spellLost": "This spell is no longer prepared or available for use!",
+				"spellMiscast": "El conjuro ha fallado.",
+				"usageDie": "Rolling The Usage Die For",
+				"usageDieDowngrade": "Usage Die Has Been Downgrade To:",
+				"usageDieExhausted": "Usage Die Has Been Exhausted For:"
+			},
+			"criticalHit": "...and lands a critical hit. Rolling damage...",
+			"errors": {
+				"supplyDepleted": "Unable to reset the usage die for your %ITEM% as your supply is depleted.",
+				"usageDieExhausted": "The usage die for your %ITEM% is already exhausted."
+			},
+			"labels": {
+				"buttons": {
+					"rollDamage": "Tirada de daño"
+				},
+				"critical": "Crítico!",
+				"failure": "Facraso",
+				"hit": "Impacto!",
+				"miss": "Fallo",
+				"success": "Exito"
+			},
+			"normalHit": "...and hits. Rolling damage...",
+			"reducingUsageDie": "Usage die reduced to %DIE%.",
+			"rollingAttributeTest": "Rolling a %ATTRIBUTE% attribute test for %NAME%...",
+			"rollingUsageDie": "Rolling the usage die for my %NAME%.",
+			"titles": {
+				"attackRoll": "Attack Roll",
+				"attributeTest": "Test: %ATTRIBUTE%",
+				"damageRoll": "Tirada de daño",
+				"failure": "Fracaso",
+				"formula": "Tirada",
+				"roll": "Resultado",
+				"success": "Exito",
+				"test": "Prueba de: ",
+				"usageDie": "Dado de uso",
+				"rollUsageDie": "Tirada de dado de uso"
+			},
+			"usageDieExhausted": "Usage die for your %NAME% exhausted."
+		},
+		"ranges": {
+			"close": "Cerrado",
+			"nearby": "Cercano",
+			"faraway": "Lejos",
+			"distant": "Distante",
+			"special": "Especial"
+		},
+		"rarities": {
+			"common": "Común",
+			"exotic": "Exótico",
+			"rare": "Raro"
+		},
+		"tabs": {
+			"labels": {
+				"background": "Trasfondo",
+				"basics": "Basics",
+				"prayers": "Prayers",
+				"spells": "Spells",
+				"magic": "Magia",
+				"items": "Equipo"
+			}
+		},
+		"weapons": {
+			"kinds": {
+				"melee": "Melee",
+				"ranged": "Distancia",
+				"unarmed": "Desarmado"
+			},
+			"sizes": {
+				"large": "Large",
+				"normal": "Normal"
+			},
+			"effects": {
+				"none": "Ninguno",
+				"break": "Romper",
+				"brutal": "Brutal",
+				"disarm": "Desarmar",
+				"entangle": "Inmovilizar",
+				"pinDown": "Atrapar",
+				"sacrifice": "Sacrificio",
+				"sweeping": "Barrido",
+				"swift": "Veloz",
+				"vicious": "Vicioso"
+			}
+		}
+	}
+}

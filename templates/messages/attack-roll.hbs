@@ -1,0 +1,9 @@
+<p>
+    {{localize "TBSH.messages.blurbs.attacksWith"}}: {{weapon}}
+</p>
+
+{{> "systems/tbsh/templates/messages/roll.hbs" roll}}
+
+{{#damage}}
+  {{> "systems/tbsh/templates/messages/damage.hbs"}}
+{{/damage}}
