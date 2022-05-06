@@ -28,6 +28,6 @@
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/condezero/tbsh-foundry",
   "manifest": "https://raw.githubusercontent.com/condezero/tbsh-foundry/main/system.json",
-  "download": "https://gitlab.com/asacolips-projects/foundry-mods/boilerplate/-/archive/1.1.0/boilerplate-master.zip",
+  "download": "https://github.com/condezero/tbsh-foundry/releases/download/release/tbsh-1.0.0.zip",
   "license": "LICENSE.txt"
 }
