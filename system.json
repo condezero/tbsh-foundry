@@ -26,8 +26,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/condezero/tbsh-foundry",
+  "manifest": "https://raw.githubusercontent.com/condezero/tbsh-foundry/main/system.json",
+  "download": "https://gitlab.com/asacolips-projects/foundry-mods/boilerplate/-/archive/1.1.0/boilerplate-master.zip",
   "license": "LICENSE.txt"
 }
